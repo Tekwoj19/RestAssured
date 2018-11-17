@@ -3,12 +3,11 @@ import org.junit.Test;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.concurrent.TimeUnit;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.hamcrest.Matchers.containsString;
-import static org.hamcrest.Matchers.equalTo;
-import static org.hamcrest.Matchers.startsWith;
+import static org.hamcrest.Matchers.*;
 
 public class RestAssuredFirstTest {
 
@@ -85,7 +84,35 @@ public class RestAssuredFirstTest {
                 body("store.book.findAll{ it.title.startsWith(\"S\")}.size",equalTo(3));
     }
 
+     @Test
+    public void canCreteProject(){
 
+
+
+     Map<String,Object>project =new HashMap<>();
+     project.put("name","TEST PROJECT 222");
+     project.put("key","TP222");
+     project.put("templateKey","com.pyxis.greenhopper.jira:gh-simplified-agility-kanban");
+     String url= "/browse/"+project.get("key");
+     given()
+           .contentType("application/json")
+           .body(project)
+           .auth()
+           .preemptive()
+           .basic("kenneth.signy.training@gmail.com","b0dHaO4lkpr4K50H8x4TAB6C")
+
+
+      .when()
+            .post("https://infoshare-rest-asssured.atlassian.net/rest/simplified/latest/project")
+
+     .then()
+     .log()
+      .all()
+      .statusCode(200).time(lessThan(5L), TimeUnit.SECONDS).body("returnUrl",equalTo(url));
+
+
+
+     }
 
 
 
