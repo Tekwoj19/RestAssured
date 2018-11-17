@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="676ca15e-2b74-4d36-ac17-c8ce9deec919" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/resources/schema.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/RestAssuredFirstTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RestAssuredFirstTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/RestAssuredFirstTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/RestAssuredFirstTest.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -22,24 +25,26 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="1179" />
+          <entry key="java" value="1309" />
           <entry key="xml" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="1179" />
+          <entry key="JAVA" value="1309" />
           <entry key="XML" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="java" value="1" />
+          <entry key="json" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="JAVA" value="1" />
+          <entry key="JSON" value="1" />
         </counts>
       </usages-collector>
     </session>
@@ -58,11 +63,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/RestAssuredFirstTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="93" column="29" selection-start-line="93" selection-start-column="29" selection-end-line="93" selection-end-column="29" />
+            <state relative-caret-position="406">
+              <caret line="123" column="12" lean-forward="true" selection-start-line="123" selection-start-column="12" selection-end-line="123" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/resources/schema.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="557">
+              <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -83,6 +97,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/Resources/schema.json" />
+        <option value="$PROJECT_DIR$/src/test/resources/schema.json" />
         <option value="$PROJECT_DIR$/src/test/java/RestAssuredFirstTest.java" />
       </list>
     </option>
@@ -145,6 +161,13 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="RestAssuredTrening" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RestAssuredTrening" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -155,7 +178,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542483800415" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542484839768" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -175,7 +198,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RestAssuredFirstTest.canCreteProject">
+  <component name="RunManager" selected="JUnit.RestAssuredFirstTest.seversInfoPassesSchemaValidoation">
     <configuration name="RestAssuredFirstTest.HelloPrefix" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RestAssuredTrening" />
       <option name="PACKAGE_NAME" value="" />
@@ -206,6 +229,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RestAssuredFirstTest.seversInfoPassesSchemaValidoation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RestAssuredTrening" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RestAssuredFirstTest" />
+      <option name="METHOD_NAME" value="seversInfoPassesSchemaValidoation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RestAssuredFirstTest.shouldCreateNewBookFromDict" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="RestAssuredTrening" />
       <option name="PACKAGE_NAME" value="" />
@@ -221,9 +254,11 @@
       <item itemvalue="JUnit.RestAssuredFirstTest.shouldCreateNewBookFromDict" />
       <item itemvalue="JUnit.RestAssuredFirstTest.returnsTotalPriceOfSelectedBooks" />
       <item itemvalue="JUnit.RestAssuredFirstTest.canCreteProject" />
+      <item itemvalue="JUnit.RestAssuredFirstTest.seversInfoPassesSchemaValidoation" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RestAssuredFirstTest.seversInfoPassesSchemaValidoation" />
         <item itemvalue="JUnit.RestAssuredFirstTest.canCreteProject" />
         <item itemvalue="JUnit.RestAssuredFirstTest.returnsTotalPriceOfSelectedBooks" />
         <item itemvalue="JUnit.RestAssuredFirstTest.shouldCreateNewBookFromDict" />
@@ -241,17 +276,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1542464318483</updated>
-      <workItem from="1542464321857" duration="12352000" />
+      <workItem from="1542464321857" duration="13337000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RestAssuredFirstTest_canCreteProject - 2018.11.17 at 20h 31m 02s.xml">
-      <configuration name="RestAssuredFirstTest.canCreteProject" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RestAssuredFirstTest_canCreteProject - 2018.11.17 at 20h 31m 32s.xml">
-      <configuration name="RestAssuredFirstTest.canCreteProject" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RestAssuredFirstTest_canCreteProject - 2018.11.17 at 20h 35m 38s.xml">
       <configuration name="RestAssuredFirstTest.canCreteProject" configurationId="JUnit" />
     </history-entry>
@@ -276,9 +305,15 @@
     <history-entry file="RestAssuredFirstTest_canCreteProject - 2018.11.17 at 20h 41m 02s.xml">
       <configuration name="RestAssuredFirstTest.canCreteProject" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="RestAssuredFirstTest_seversInfoPassesSchemaValidoation - 2018.11.17 at 20h 54m 18s.xml">
+      <configuration name="RestAssuredFirstTest.seversInfoPassesSchemaValidoation" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestAssuredFirstTest_seversInfoPassesSchemaValidoation - 2018.11.17 at 20h 55m 36s.xml">
+      <configuration name="RestAssuredFirstTest.seversInfoPassesSchemaValidoation" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12352000" />
+    <option name="totallyTimeSpent" value="13337000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="-2" width="1920" height="1082" extended-state="6" />
@@ -327,10 +362,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/schema.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="557">
+          <caret line="41" column="1" selection-start-line="41" selection-start-column="1" selection-end-line="41" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/RestAssuredFirstTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="93" column="29" selection-start-line="93" selection-start-column="29" selection-end-line="93" selection-end-column="29" />
+        <state relative-caret-position="406">
+          <caret line="123" column="12" lean-forward="true" selection-start-line="123" selection-start-column="12" selection-end-line="123" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

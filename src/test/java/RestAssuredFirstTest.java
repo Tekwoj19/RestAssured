@@ -5,7 +5,9 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.concurrent.TimeUnit;
 
+import static io.restassured.RestAssured.get;
 import static io.restassured.RestAssured.given;
+import static io.restassured.module.jsv.JsonSchemaValidator.matchesJsonSchemaInClasspath;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.*;
 
@@ -88,8 +90,7 @@ public class RestAssuredFirstTest {
     public void canCreteProject(){
 
 
-
-     Map<String,Object>project =new HashMap<>();
+        Map<String,Object>project =new HashMap<>();
      project.put("name","TEST PROJECT 222");
      project.put("key","TP222");
      project.put("templateKey","com.pyxis.greenhopper.jira:gh-simplified-agility-kanban");
@@ -113,10 +114,15 @@ public class RestAssuredFirstTest {
 
 
      }
+         @Test
+    public void  seversInfoPassesSchemaValidoation(){
+        get("https://safe-plateau-87483.herokuapp.com/hello")
+                .then()
+                .assertThat()
+                .body(matchesJsonSchemaInClasspath("schema.json"));
 
 
-
-
+         }
 
 
 }
